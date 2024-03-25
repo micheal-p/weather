@@ -8,29 +8,23 @@
   font-family: 'Open Sans', sans-serif;
 }
 
-/* body {
-  background: #E3F2FD;
-} */
-body {
-  margin: 0;
-  padding: 0;
-  overflow: hidden; /* Ensure video doesn't overflow the body */
-}
+ 
+
 
 body {
   margin: 0;
   padding: 0;
-  overflow: hidden; /* Ensure video doesn't overflow the body */
 }
 
 #bg-video {
   position: fixed;
   right: 0;
   bottom: 0;
-  width: 100%; /* Set width to 100% of the viewport */
-  height: 100%; /* Set height to 100% of the viewport */
-  object-fit: cover; /* Ensure the video covers the entire element */
-  z-index: -1; /* Ensure video is behind other content */
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
 }
 
 h1 {

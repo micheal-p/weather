@@ -8,23 +8,25 @@
   font-family: 'Open Sans', sans-serif;
 }
 
- 
+/* body {
+  background: #E3F2FD;
+} */
 
 
 body {
   margin: 0;
   padding: 0;
+  overflow: hidden; /* Ensure video doesn't overflow the body */
 }
 
 #bg-video {
   position: fixed;
   right: 0;
   bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -1;
+  width: 100%; /* Set width to 100% of the viewport */
+  height: 100%; /* Set height to 100% of the viewport */
+  object-fit: cover; /* Ensure the video covers the entire element */
+  z-index: -1; /* Ensure video is behind other content */
 }
 
 h1 {
@@ -42,7 +44,7 @@ h1 {
 }
 
 .weather-input {
-  width: 550px;
+  width: 300px;
 }
 
 .weather-input input {
@@ -86,9 +88,9 @@ h1 {
   cursor: pointer;
   outline: none;
   border: none;
-  border-radius: 4px;
+  border-radius: 5px;
   font-size: 1rem;
-  color: #fff;
+  color: rgb(0, 0, 0);
   background: #000000;
   transition: 0.2s ease;
 }
@@ -98,7 +100,7 @@ h1 {
 }
 
 .weather-input .location-btn {
-  background: #000000;
+  background: #ffffff;
 }
 
 .weather-input .location-btn:hover {

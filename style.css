@@ -194,7 +194,7 @@ h1 {
 
 @media (max-width: 750px) {
    body {
-    overflow: visible; /* Allowing overflow for smaller screens */
+    overflow: auto;
   }
 
   h1 {
@@ -214,9 +214,4 @@ h1 {
   .weather-data h2 {
     font-size: 1.35rem;
   }
-  #bg-video {
-    position: relative; /* Adjust position for smaller screens */
-    width: auto; /* Adjust width for smaller screens */
-    height: auto; /* Adjust height for smaller screens */
-  }
-}
+

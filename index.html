@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Weather App </title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="description"
+    content="In this weather app project, users can enter any city name to get the weather forecast or simply click on the Use Current Location button to get current location weather details, including temperature, wind speed, humidity, and more.">
+  <meta name="keywords"
+    content="javascript weather app,weather app javascript,weather app,html weather app,css weather app,weather app html css javascript,weather app tutorial,weather app project,openweathermap api javascript,weather forecast,html css javascript tutorial,front-end development,html css,web app development,web development,weather api integration,web development tutorial,coding tutorial,beginner-friendly tutorial,step-by-step tutorial,front-end programming,Javascript">
+  <script src="js/custom-scripts.js" defer=""></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="js/script.js" defer=""></script>
+</head>
+
+<body>
+  <video autoplay muted loop id="bg-video">
+    <source src="pexels_videos_3931 (1080p).mp4" type="video/mp4">
+   
+  </video>
+  <h1>Weather Dashboard</h1>
+  <div class="container">
+    <div class="weather-input">
+      <h3 style="color: rgb(255, 255, 255);">Enter a City Name</h3>
+      <input class="city-input" type="text" placeholder="E.g, Lagos, Accra, USA">
+      <button class="search-btn" style="background: white; color: black;">Search</button>
+      <div class="separator"></div>
+      <button  class="location-btn">Use Current Location</button>
+    </div>
+    <div class="weather-data">
+      <div class="current-weather">
+        <div class="details">
+          <h2>_______ ( ______ )</h2>
+          <h6>Temperature: __°C</h6>
+          <h6>Wind: __ M/S</h6>
+          <h6>Humidity: __%</h6>
+        </div>
+      </div>
+      <div class="days-forecast">
+        <h2 style="color: white;">4-Day Forecast</h2>
+        <ul class="weather-cards">
+          <li class="card">
+            <h3>( ______ )</h3>
+            <h6>Temp: __C</h6>
+            <h6>Wind: __ M/S</h6>
+            <h6>Humidity: __%</h6>
+          </li>
+          <li class="card">
+            <h3>( ______ )</h3>
+            <h6>Temp: __C</h6>
+            <h6>Wind: __ M/S</h6>
+            <h6>Humidity: __%</h6>
+          </li>
+          <li class="card">
+            <h3>( ______ )</h3>
+            <h6>Temp: __C</h6>
+            <h6>Wind: __ M/S</h6>
+            <h6>Humidity: __%</h6>
+          </li>
+          <li class="card">
+            <h3>( ______ )</h3>
+            <h6>Temp: __C</h6>
+            <h6>Wind: __ M/S</h6>
+            <h6>Humidity: __%</h6>
+          </li>
+          <!-- <li class="card">
+            <h3>( ______ )</h3>
+            <h6>Temp: __C</h6>
+            <h6>Wind: __ M/S</h6>
+            <h6>Humidity: __%</h6>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
